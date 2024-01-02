@@ -1,10 +1,12 @@
 import {Button} from "@/components/ui/button";
+import {UserButton} from "@clerk/nextjs";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <Button variant="destructive" size="lg">
-      Hello
-    </Button>
+    <div>
+      <h1>dashboard</h1>
+      <UserButton afterSignOutUrl="/" />
+    </div>
   );
 }
