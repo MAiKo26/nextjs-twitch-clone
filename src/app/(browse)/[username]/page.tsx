@@ -2,7 +2,7 @@ import {isFollowingUser} from "@/lib/follow-service";
 import {getUserByUsername} from "@/lib/user-service";
 import {notFound} from "next/navigation";
 import React from "react";
-import Actions from "./_components/Actions";
+import {Actions} from "./_components/Actions";
 
 interface UserPageProps {
   params: {

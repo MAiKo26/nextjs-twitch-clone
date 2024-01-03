@@ -1,6 +1,6 @@
 import Navbar from "@/app/(browse)/_components/navbar/Navbar";
 import React from "react";
-import Sidebar, {SidebarSkeleton} from "./_components/sidebar/Sidebar";
+import {Sidebar, SidebarSkeleton} from "./_components/sidebar/Sidebar";
 import Container from "./_components/Container";
 import {Suspense} from "react";
 function BrowseLayout({children}: {children: React.ReactNode}) {
