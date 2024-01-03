@@ -1,4 +1,4 @@
-import {Toggle} from "./toggle";
+import {Toggle} from "./Toggle";
 import {Wrapper} from "./wrapper";
 import {Navigation} from "./navigation";
 
