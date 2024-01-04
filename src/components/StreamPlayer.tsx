@@ -1,0 +1,30 @@
+"use client";
+import {useViewerToken} from "@/hooks/use-viewer-token";
+import {Stream, User} from "@prisma/client";
+import {LiveKitRoom} from "@livekit/components-react";
+import React from "react";
+
+interface StreamPlayerProps {
+  user: User & {stream: Stream | null};
+  stream: Stream;
+  isFollowing: boolean;
+}
+
+function StreamPlayer({user, stream, isFollowing}: StreamPlayerProps) {
+  const {token, name, identity} = useViewerToken(user.id);
+
+  if (!token || !name || !identity) {
+    return <>Cannot Watch the stream</>;
+  }
+
+  return (
+    <>
+      <LiveKitRoom
+        token={token}
+        serverUrl={process.env.NEXT_PUBLIC_LIVEKIT_WS_URL}
+      />
+    </>
+  );
+}
+
+export default StreamPlayer;
