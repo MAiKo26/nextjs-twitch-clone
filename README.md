@@ -1,6 +1,6 @@
 # Twitch Clone
 
-Twitch Clone is a streaming and chat application developed using Next.js, Clerk, Livekit, Prisma, and Tailwind CSS.
+Twitch Clone is a streaming and chat application developed using Next.js, Clerk, Livekit, Prisma, and Tailwind CSS. Followed this [Tutorial](https://www.youtube.com/watch?v=a02JAryRPVU&t=21833s) while doing this project and added some modifications.
 
 ## Features
 
